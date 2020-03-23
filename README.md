@@ -3,5 +3,5 @@
  *Develop a mobile application containing various mini-games that develop cognitive abilities.*
   
 
- ![Альтернативный текст](/Users/astra/Documents/Swift/Project_IOS/BrainStormr/apple.jpeg )
+ ![Image alt](https://github.com/{VortexAstra}/{BrainStorm}/raw/{Master}/{/Users/astra/Documents/Swift/BrainStorm/}/appple.png)
 
