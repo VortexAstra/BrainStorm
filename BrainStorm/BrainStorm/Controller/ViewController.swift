@@ -4,6 +4,9 @@ import CircleMenu
 
 class ViewController: UIViewController, CircleMenuDelegate {
   
+  let width = 50
+  let height = 50
+  
   //    let colors = [UIColor.redColor(), UIColor.grayColor(), UIColor.greenColor(), UIColor.purpleColor()]
   let items: [(icon: String, color: UIColor)] = [
     ("icon_home", UIColor(red: 0.19, green: 0.57, blue: 1, alpha: 1)),
@@ -13,17 +16,18 @@ class ViewController: UIViewController, CircleMenuDelegate {
     ("nearby-btn", UIColor(red: 1, green: 0.39, blue: 0, alpha: 1))
   ]
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
     let button = CircleMenu(
-      frame: CGRect(x: 200, y: 200, width: 50, height: 50),
+      frame: CGRect(x: 200, y: 200, width: width, height: height),
       normalIcon:"icon_menu",
       selectedIcon:"icon_close",
-      buttonsCount: 4,
-      duration: 4,
+      buttonsCount: 5,
+      duration: 2,
       distance: 120)
+    
     button.backgroundColor = UIColor.lightGray
     button.delegate = self
     button.layer.cornerRadius = button.frame.size.width / 2.0
@@ -43,11 +47,11 @@ class ViewController: UIViewController, CircleMenuDelegate {
     button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
   }
   
-  func circleMenu(_: CircleMenu, buttonWillSelected _: UIButton, atIndex: Int) {
-    print("button will selected: \(atIndex)")
-  }
-  
-  func circleMenu(_: CircleMenu, buttonDidSelected _: UIButton, atIndex: Int) {
-    print("button did selected: \(atIndex)")
-  }
+//  func circleMenu(_: CircleMenu, buttonWillSelected _: UIButton, atIndex: Int) {
+//    print("button will selected: \(atIndex)")
+//  }
+//
+//  func circleMenu(_: CircleMenu, buttonDidSelected _: UIButton, atIndex: Int) {
+//    print("button did selected: \(atIndex)")
+//  }
 }

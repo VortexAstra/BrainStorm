@@ -15,6 +15,8 @@
 		868677DF24294A6B0093D90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868677DE24294A6B0093D90C /* Assets.xcassets */; };
 		868677E224294A6B0093D90C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868677E024294A6B0093D90C /* LaunchScreen.storyboard */; };
 		868677ED24294A6B0093D90C /* BrainStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868677EC24294A6B0093D90C /* BrainStormTests.swift */; };
+		86905EBA24438924000A010B /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86905EB924438924000A010B /* gifLoad.swift */; };
+		86905EC22443938F000A010B /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86905EC12443938F000A010B /* launch.jpg */; };
 		B0C523F21A121E6511161799 /* Pods_BrainStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E08D349EF92F9E6831C578A /* Pods_BrainStorm.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		868677E824294A6B0093D90C /* BrainStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		868677EC24294A6B0093D90C /* BrainStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormTests.swift; sourceTree = "<group>"; };
 		868677EE24294A6B0093D90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86905EB924438924000A010B /* gifLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
+		86905EC12443938F000A010B /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch.jpg; path = ../../../../../../Downloads/launch.jpg; sourceTree = "<group>"; };
 		8FEABE94FCE63EF9381DEB36 /* Pods-BrainStormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStormTests.release.xcconfig"; path = "Target Support Files/Pods-BrainStormTests/Pods-BrainStormTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2699E24D693DB74BBA135EE /* Pods-BrainStormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStormTests.debug.xcconfig"; path = "Target Support Files/Pods-BrainStormTests/Pods-BrainStormTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E91DD73FF60CDF9316733678 /* Pods-BrainStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStorm.debug.xcconfig"; path = "Target Support Files/Pods-BrainStorm/Pods-BrainStorm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,8 +88,10 @@
 			children = (
 				868677D524294A670093D90C /* AppDelegate.swift */,
 				868677D724294A670093D90C /* SceneDelegate.swift */,
+				86905EC12443938F000A010B /* launch.jpg */,
 				868677DE24294A6B0093D90C /* Assets.xcassets */,
 				868677E024294A6B0093D90C /* LaunchScreen.storyboard */,
+				86905EB924438924000A010B /* gifLoad.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86905EC22443938F000A010B /* launch.jpg in Resources */,
 				868677E224294A6B0093D90C /* LaunchScreen.storyboard in Resources */,
 				868677DF24294A6B0093D90C /* Assets.xcassets in Resources */,
 				868677DD24294A670093D90C /* Main.storyboard in Resources */,
@@ -333,6 +340,7 @@
 			files = (
 				868677DA24294A670093D90C /* ViewController.swift in Sources */,
 				868677D624294A670093D90C /* AppDelegate.swift in Sources */,
+				86905EBA24438924000A010B /* gifLoad.swift in Sources */,
 				868677D824294A670093D90C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

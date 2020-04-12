@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrainStorm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-1T-4Oe">
-                                <rect key="frame" x="127.5" y="318.5" width="120" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EnV-OW-Agj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.058823529409999999" green="0.078431372550000003" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VWz-1T-4Oe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="AUS-9v-IDH"/>
-                            <constraint firstItem="VWz-1T-4Oe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="j7f-9j-flx"/>
+                            <constraint firstItem="EnV-OW-Agj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="7s8-q0-HDo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="EnV-OW-Agj" secondAttribute="bottom" id="DIY-iV-M29"/>
+                            <constraint firstItem="EnV-OW-Agj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="UIE-XG-W1E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EnV-OW-Agj" secondAttribute="trailing" constant="-16" id="qSs-mG-7VI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,4 +36,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch.jpg" width="750" height="1000"/>
+    </resources>
 </document>
