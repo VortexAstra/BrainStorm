@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		513901DDFD3FA6A2B2B0FB51 /* Pods_BrainStormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AD4E39D2B5C33490DFE1EB /* Pods_BrainStormTests.framework */; };
+		868677D624294A670093D90C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868677D524294A670093D90C /* AppDelegate.swift */; };
+		868677D824294A670093D90C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868677D724294A670093D90C /* SceneDelegate.swift */; };
+		868677DA24294A670093D90C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868677D924294A670093D90C /* ViewController.swift */; };
+		868677DD24294A670093D90C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868677DB24294A670093D90C /* Main.storyboard */; };
+		868677DF24294A6B0093D90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868677DE24294A6B0093D90C /* Assets.xcassets */; };
+		868677E224294A6B0093D90C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868677E024294A6B0093D90C /* LaunchScreen.storyboard */; };
+		868677ED24294A6B0093D90C /* BrainStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868677EC24294A6B0093D90C /* BrainStormTests.swift */; };
+		86905EBA24438924000A010B /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86905EB924438924000A010B /* gifLoad.swift */; };
+		B0C523F21A121E6511161799 /* Pods_BrainStorm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E08D349EF92F9E6831C578A /* Pods_BrainStorm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		868677E924294A6B0093D90C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 868677CA24294A670093D90C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 868677D124294A670093D90C;
+			remoteInfo = BrainStorm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E08D349EF92F9E6831C578A /* Pods_BrainStorm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainStorm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AD4E39D2B5C33490DFE1EB /* Pods_BrainStormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainStormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		868677D224294A670093D90C /* BrainStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		868677D524294A670093D90C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		868677D724294A670093D90C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		868677D924294A670093D90C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		868677DC24294A670093D90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		868677DE24294A6B0093D90C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		868677E124294A6B0093D90C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		868677E324294A6B0093D90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		868677E824294A6B0093D90C /* BrainStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		868677EC24294A6B0093D90C /* BrainStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormTests.swift; sourceTree = "<group>"; };
+		868677EE24294A6B0093D90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86905EB924438924000A010B /* gifLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
+		8FEABE94FCE63EF9381DEB36 /* Pods-BrainStormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStormTests.release.xcconfig"; path = "Target Support Files/Pods-BrainStormTests/Pods-BrainStormTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2699E24D693DB74BBA135EE /* Pods-BrainStormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStormTests.debug.xcconfig"; path = "Target Support Files/Pods-BrainStormTests/Pods-BrainStormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91DD73FF60CDF9316733678 /* Pods-BrainStorm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStorm.debug.xcconfig"; path = "Target Support Files/Pods-BrainStorm/Pods-BrainStorm.debug.xcconfig"; sourceTree = "<group>"; };
+		F417023011E49105A5D53AA7 /* Pods-BrainStorm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainStorm.release.xcconfig"; path = "Target Support Files/Pods-BrainStorm/Pods-BrainStorm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		868677CF24294A670093D90C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C523F21A121E6511161799 /* Pods_BrainStorm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868677E524294A6B0093D90C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513901DDFD3FA6A2B2B0FB51 /* Pods_BrainStormTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445B6E560718349271981614 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E91DD73FF60CDF9316733678 /* Pods-BrainStorm.debug.xcconfig */,
+				F417023011E49105A5D53AA7 /* Pods-BrainStorm.release.xcconfig */,
+				B2699E24D693DB74BBA135EE /* Pods-BrainStormTests.debug.xcconfig */,
+				8FEABE94FCE63EF9381DEB36 /* Pods-BrainStormTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8640BE9F244373A500CFD60B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				868677D524294A670093D90C /* AppDelegate.swift */,
+				868677D724294A670093D90C /* SceneDelegate.swift */,
+				868677DE24294A6B0093D90C /* Assets.xcassets */,
+				868677E024294A6B0093D90C /* LaunchScreen.storyboard */,
+				86905EB924438924000A010B /* gifLoad.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		868677C924294A670093D90C = {
+			isa = PBXGroup;
+			children = (
+				868677D424294A670093D90C /* BrainStorm */,
+				868677EB24294A6B0093D90C /* BrainStormTests */,
+				868677D324294A670093D90C /* Products */,
+				445B6E560718349271981614 /* Pods */,
+				F6E8D91E5AAD183D7A94E357 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		868677D324294A670093D90C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				868677D224294A670093D90C /* BrainStorm.app */,
+				868677E824294A6B0093D90C /* BrainStormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		868677D424294A670093D90C /* BrainStorm */ = {
+			isa = PBXGroup;
+			children = (
+				86905EB824438507000A010B /* View */,
+				86905EB7244384EB000A010B /* Controller */,
+				86905EB6244384DD000A010B /* Model */,
+				8640BE9F244373A500CFD60B /* Supporting files */,
+				868677E324294A6B0093D90C /* Info.plist */,
+			);
+			path = BrainStorm;
+			sourceTree = "<group>";
+		};
+		868677EB24294A6B0093D90C /* BrainStormTests */ = {
+			isa = PBXGroup;
+			children = (
+				868677EC24294A6B0093D90C /* BrainStormTests.swift */,
+				868677EE24294A6B0093D90C /* Info.plist */,
+			);
+			path = BrainStormTests;
+			sourceTree = "<group>";
+		};
+		86905EB6244384DD000A010B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86905EB7244384EB000A010B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				868677D924294A670093D90C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		86905EB824438507000A010B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				868677DB24294A670093D90C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6E8D91E5AAD183D7A94E357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E08D349EF92F9E6831C578A /* Pods_BrainStorm.framework */,
+				78AD4E39D2B5C33490DFE1EB /* Pods_BrainStormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		868677D124294A670093D90C /* BrainStorm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868677F124294A6B0093D90C /* Build configuration list for PBXNativeTarget "BrainStorm" */;
+			buildPhases = (
+				983715C7FAD3510508B9B10C /* [CP] Check Pods Manifest.lock */,
+				868677CE24294A670093D90C /* Sources */,
+				868677CF24294A670093D90C /* Frameworks */,
+				868677D024294A670093D90C /* Resources */,
+				12A8C4A9726DC5439242D396 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrainStorm;
+			productName = BrainStorm;
+			productReference = 868677D224294A670093D90C /* BrainStorm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		868677E724294A6B0093D90C /* BrainStormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 868677F424294A6B0093D90C /* Build configuration list for PBXNativeTarget "BrainStormTests" */;
+			buildPhases = (
+				36503700B62DDD84DD5781B1 /* [CP] Check Pods Manifest.lock */,
+				868677E424294A6B0093D90C /* Sources */,
+				868677E524294A6B0093D90C /* Frameworks */,
+				868677E624294A6B0093D90C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				868677EA24294A6B0093D90C /* PBXTargetDependency */,
+			);
+			name = BrainStormTests;
+			productName = BrainStormTests;
+			productReference = 868677E824294A6B0093D90C /* BrainStormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		868677CA24294A670093D90C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Артем Устинов";
+				TargetAttributes = {
+					868677D124294A670093D90C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					868677E724294A6B0093D90C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 868677D124294A670093D90C;
+					};
+				};
+			};
+			buildConfigurationList = 868677CD24294A670093D90C /* Build configuration list for PBXProject "BrainStorm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 868677C924294A670093D90C;
+			productRefGroup = 868677D324294A670093D90C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				868677D124294A670093D90C /* BrainStorm */,
+				868677E724294A6B0093D90C /* BrainStormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		868677D024294A670093D90C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868677E224294A6B0093D90C /* LaunchScreen.storyboard in Resources */,
+				868677DF24294A6B0093D90C /* Assets.xcassets in Resources */,
+				868677DD24294A670093D90C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868677E624294A6B0093D90C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12A8C4A9726DC5439242D396 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrainStorm/Pods-BrainStorm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrainStorm/Pods-BrainStorm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrainStorm/Pods-BrainStorm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36503700B62DDD84DD5781B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrainStormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		983715C7FAD3510508B9B10C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrainStorm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		868677CE24294A670093D90C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868677DA24294A670093D90C /* ViewController.swift in Sources */,
+				868677D624294A670093D90C /* AppDelegate.swift in Sources */,
+				86905EBA24438924000A010B /* gifLoad.swift in Sources */,
+				868677D824294A670093D90C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868677E424294A6B0093D90C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868677ED24294A6B0093D90C /* BrainStormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		868677EA24294A6B0093D90C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 868677D124294A670093D90C /* BrainStorm */;
+			targetProxy = 868677E924294A6B0093D90C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		868677DB24294A670093D90C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				868677DC24294A670093D90C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		868677E024294A6B0093D90C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				868677E124294A6B0093D90C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		868677EF24294A6B0093D90C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		868677F024294A6B0093D90C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		868677F224294A6B0093D90C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91DD73FF60CDF9316733678 /* Pods-BrainStorm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AGMRUUR65;
+				INFOPLIST_FILE = BrainStorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		868677F324294A6B0093D90C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F417023011E49105A5D53AA7 /* Pods-BrainStorm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AGMRUUR65;
+				INFOPLIST_FILE = BrainStorm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStorm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		868677F524294A6B0093D90C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2699E24D693DB74BBA135EE /* Pods-BrainStormTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AGMRUUR65;
+				INFOPLIST_FILE = BrainStormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainStorm.app/BrainStorm";
+			};
+			name = Debug;
+		};
+		868677F624294A6B0093D90C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FEABE94FCE63EF9381DEB36 /* Pods-BrainStormTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9AGMRUUR65;
+				INFOPLIST_FILE = BrainStormTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrainStorm.app/BrainStorm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		868677CD24294A670093D90C /* Build configuration list for PBXProject "BrainStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868677EF24294A6B0093D90C /* Debug */,
+				868677F024294A6B0093D90C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868677F124294A6B0093D90C /* Build configuration list for PBXNativeTarget "BrainStorm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868677F224294A6B0093D90C /* Debug */,
+				868677F324294A6B0093D90C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		868677F424294A6B0093D90C /* Build configuration list for PBXNativeTarget "BrainStormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868677F524294A6B0093D90C /* Debug */,
+				868677F624294A6B0093D90C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 868677CA24294A670093D90C /* Project object */;
+}

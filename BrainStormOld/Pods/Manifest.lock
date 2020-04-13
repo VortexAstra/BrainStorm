@@ -1,0 +1,24 @@
+PODS:
+  - CircleMenu (4.1.0)
+  - Macaw (0.9.6):
+    - SWXMLHash
+  - SWXMLHash (5.0.1)
+
+DEPENDENCIES:
+  - CircleMenu
+  - Macaw
+
+SPEC REPOS:
+  trunk:
+    - CircleMenu
+    - Macaw
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  CircleMenu: a66095199a5e26f19acbb212f077010257767fe5
+  Macaw: 8306d775625ba003beee4186b9533fd7cf284024
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
+
+PODFILE CHECKSUM: f1270df2e8974eda0b1aae19f99dcb172c961633
+
+COCOAPODS: 1.9.1
