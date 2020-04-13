@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1122444A3A600A52CFF /* AppDelegate.swift */; };
 		8642C1152444A3A600A52CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1142444A3A600A52CFF /* SceneDelegate.swift */; };
-		8642C1172444A3A600A52CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1162444A3A600A52CFF /* ViewController.swift */; };
+		8642C1172444A3A600A52CFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1162444A3A600A52CFF /* MainViewController.swift */; };
 		8642C11A2444A3A600A52CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8642C1182444A3A600A52CFF /* Main.storyboard */; };
 		8642C11C2444A3A800A52CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8642C11B2444A3A800A52CFF /* Assets.xcassets */; };
 		8642C11F2444A3A800A52CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8642C11D2444A3A800A52CFF /* LaunchScreen.storyboard */; };
+		8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12A2444B45D00A52CFF /* MenuViewController.swift */; };
+		8642C12D2444B4C200A52CFF /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */; };
+		8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */; };
+		8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1302444B4E700A52CFF /* FactsViewController.swift */; };
+		8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1322444B5B100A52CFF /* StudyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8642C10F2444A3A600A52CFF /* BrainStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8642C1122444A3A600A52CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8642C1142444A3A600A52CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8642C1162444A3A600A52CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8642C1162444A3A600A52CFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8642C1192444A3A600A52CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8642C11B2444A3A800A52CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8642C11E2444A3A800A52CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8642C1202444A3A800A52CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8642C12A2444B45D00A52CFF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormViewController.swift; sourceTree = "<group>"; };
+		8642C1302444B4E700A52CFF /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		8642C1322444B5B100A52CFF /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,8 @@
 		8642C1112444A3A600A52CFF /* BrainStorm */ = {
 			isa = PBXGroup;
 			children = (
-				8642C1292444A90A00A52CFF /* Model */,
 				8642C1262444A8E700A52CFF /* Supporting files */,
+				8642C1292444A90A00A52CFF /* Model */,
 				8642C1272444A8F500A52CFF /* Controller */,
 				8642C1282444A8FF00A52CFF /* View */,
 				8642C1202444A3A800A52CFF /* Info.plist */,
@@ -79,7 +89,12 @@
 		8642C1272444A8F500A52CFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8642C1162444A3A600A52CFF /* ViewController.swift */,
+				8642C1162444A3A600A52CFF /* MainViewController.swift */,
+				8642C12A2444B45D00A52CFF /* MenuViewController.swift */,
+				8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */,
+				8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */,
+				8642C1302444B4E700A52CFF /* FactsViewController.swift */,
+				8642C1322444B5B100A52CFF /* StudyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8642C1172444A3A600A52CFF /* ViewController.swift in Sources */,
+				8642C1172444A3A600A52CFF /* MainViewController.swift in Sources */,
+				8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */,
+				8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */,
 				8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */,
+				8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */,
+				8642C12D2444B4C200A52CFF /* ArcadeViewController.swift in Sources */,
 				8642C1152444A3A600A52CFF /* SceneDelegate.swift in Sources */,
+				8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
