@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862059BA2445308500A4E78D /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862059B92445308500A4E78D /* ArcadeViewController.swift */; };
 		8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1122444A3A600A52CFF /* AppDelegate.swift */; };
 		8642C1152444A3A600A52CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1142444A3A600A52CFF /* SceneDelegate.swift */; };
 		8642C1172444A3A600A52CFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1162444A3A600A52CFF /* MainViewController.swift */; };
@@ -14,13 +15,13 @@
 		8642C11C2444A3A800A52CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8642C11B2444A3A800A52CFF /* Assets.xcassets */; };
 		8642C11F2444A3A800A52CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8642C11D2444A3A800A52CFF /* LaunchScreen.storyboard */; };
 		8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12A2444B45D00A52CFF /* MenuViewController.swift */; };
-		8642C12D2444B4C200A52CFF /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */; };
 		8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */; };
 		8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1302444B4E700A52CFF /* FactsViewController.swift */; };
 		8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1322444B5B100A52CFF /* StudyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		862059B92445308500A4E78D /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		8642C10F2444A3A600A52CFF /* BrainStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8642C1122444A3A600A52CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8642C1142444A3A600A52CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		8642C11E2444A3A800A52CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8642C1202444A3A800A52CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8642C12A2444B45D00A52CFF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
 		8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormViewController.swift; sourceTree = "<group>"; };
 		8642C1302444B4E700A52CFF /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		8642C1322444B5B100A52CFF /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +47,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862059AE24452C9100A4E78D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		862059B124452D5800A4E78D /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				8642C1162444A3A600A52CFF /* MainViewController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		862059B224452D6100A4E78D /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				8642C12A2444B45D00A52CFF /* MenuViewController.swift */,
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		862059B324452D6800A4E78D /* ArcadeSceneController */ = {
+			isa = PBXGroup;
+			children = (
+				862059B92445308500A4E78D /* ArcadeViewController.swift */,
+			);
+			path = ArcadeSceneController;
+			sourceTree = "<group>";
+		};
+		862059B424452D7000A4E78D /* BrainStormController */ = {
+			isa = PBXGroup;
+			children = (
+				8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */,
+			);
+			path = BrainStormController;
+			sourceTree = "<group>";
+		};
+		862059B524452D7F00A4E78D /* FactsController */ = {
+			isa = PBXGroup;
+			children = (
+				8642C1302444B4E700A52CFF /* FactsViewController.swift */,
+			);
+			path = FactsController;
+			sourceTree = "<group>";
+		};
+		862059B624452D8800A4E78D /* StudyController */ = {
+			isa = PBXGroup;
+			children = (
+				8642C1322444B5B100A52CFF /* StudyViewController.swift */,
+			);
+			path = StudyController;
+			sourceTree = "<group>";
+		};
 		8642C1062444A3A600A52CFF = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +144,13 @@
 		8642C1272444A8F500A52CFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8642C1162444A3A600A52CFF /* MainViewController.swift */,
-				8642C12A2444B45D00A52CFF /* MenuViewController.swift */,
-				8642C12C2444B4C200A52CFF /* ArcadeViewController.swift */,
-				8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */,
-				8642C1302444B4E700A52CFF /* FactsViewController.swift */,
-				8642C1322444B5B100A52CFF /* StudyViewController.swift */,
+				862059AE24452C9100A4E78D /* Game */,
+				862059B124452D5800A4E78D /* MainController */,
+				862059B224452D6100A4E78D /* MenuController */,
+				862059B324452D6800A4E78D /* ArcadeSceneController */,
+				862059B424452D7000A4E78D /* BrainStormController */,
+				862059B524452D7F00A4E78D /* FactsController */,
+				862059B624452D8800A4E78D /* StudyController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,8 +245,8 @@
 				8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */,
 				8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */,
 				8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */,
+				862059BA2445308500A4E78D /* ArcadeViewController.swift in Sources */,
 				8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */,
-				8642C12D2444B4C200A52CFF /* ArcadeViewController.swift in Sources */,
 				8642C1152444A3A600A52CFF /* SceneDelegate.swift in Sources */,
 				8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */,
 			);
