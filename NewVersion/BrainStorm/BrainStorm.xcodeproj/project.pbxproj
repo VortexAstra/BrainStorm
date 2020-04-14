@@ -18,6 +18,10 @@
 		8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */; };
 		8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1302444B4E700A52CFF /* FactsViewController.swift */; };
 		8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1322444B5B100A52CFF /* StudyViewController.swift */; };
+		864EAAA324460D6600015CDA /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAA224460D6600015CDA /* ConcentrationViewController.swift */; };
+		864EAAA72446125B00015CDA /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAA62446125B00015CDA /* Cards.swift */; };
+		864EAAA92446127100015CDA /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAA82446127100015CDA /* Concentration.swift */; };
+		864EAAAD2446129A00015CDA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAAC2446129A00015CDA /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormViewController.swift; sourceTree = "<group>"; };
 		8642C1302444B4E700A52CFF /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		8642C1322444B5B100A52CFF /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
+		864EAAA224460D6600015CDA /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
+		864EAAA62446125B00015CDA /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		864EAAA82446127100015CDA /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		864EAAAC2446129A00015CDA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 		862059AE24452C9100A4E78D /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				864EAAA024460D1200015CDA /* ControllerForScreenGame */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -144,9 +153,8 @@
 		8642C1272444A8F500A52CFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				864EAAAF2446154E00015CDA /* ContreollerForPath */,
 				862059AE24452C9100A4E78D /* Game */,
-				862059B124452D5800A4E78D /* MainController */,
-				862059B224452D6100A4E78D /* MenuController */,
 				862059B324452D6800A4E78D /* ArcadeSceneController */,
 				862059B424452D7000A4E78D /* BrainStormController */,
 				862059B524452D7F00A4E78D /* FactsController */,
@@ -158,6 +166,7 @@
 		8642C1282444A8FF00A52CFF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				864EAAAA2446128600015CDA /* Utils */,
 				8642C1182444A3A600A52CFF /* Main.storyboard */,
 			);
 			path = View;
@@ -166,8 +175,59 @@
 		8642C1292444A90A00A52CFF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				864EAAA52446123700015CDA /* Concentration */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		864EAAA024460D1200015CDA /* ControllerForScreenGame */ = {
+			isa = PBXGroup;
+			children = (
+				864EAAA224460D6600015CDA /* ConcentrationViewController.swift */,
+			);
+			path = ControllerForScreenGame;
+			sourceTree = "<group>";
+		};
+		864EAAA42446122F00015CDA /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				864EAAA62446125B00015CDA /* Cards.swift */,
+				864EAAA82446127100015CDA /* Concentration.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		864EAAA52446123700015CDA /* Concentration */ = {
+			isa = PBXGroup;
+			children = (
+				864EAAA42446122F00015CDA /* Cards */,
+			);
+			path = Concentration;
+			sourceTree = "<group>";
+		};
+		864EAAAA2446128600015CDA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				864EAAAB2446128D00015CDA /* Theme */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		864EAAAB2446128D00015CDA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				864EAAAC2446129A00015CDA /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		864EAAAF2446154E00015CDA /* ContreollerForPath */ = {
+			isa = PBXGroup;
+			children = (
+				862059B124452D5800A4E78D /* MainController */,
+				862059B224452D6100A4E78D /* MenuController */,
+			);
+			path = ContreollerForPath;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,12 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864EAAA92446127100015CDA /* Concentration.swift in Sources */,
 				8642C1172444A3A600A52CFF /* MainViewController.swift in Sources */,
 				8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */,
 				8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */,
+				864EAAA324460D6600015CDA /* ConcentrationViewController.swift in Sources */,
 				8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */,
+				864EAAA72446125B00015CDA /* Cards.swift in Sources */,
 				862059BA2445308500A4E78D /* ArcadeViewController.swift in Sources */,
 				8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */,
+				864EAAAD2446129A00015CDA /* Theme.swift in Sources */,
 				8642C1152444A3A600A52CFF /* SceneDelegate.swift in Sources */,
 				8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */,
 			);
@@ -402,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -420,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = astra.BrainStorm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
