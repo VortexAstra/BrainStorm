@@ -1,11 +1,3 @@
-//
-//  Concentration.swift
-//  Concentration
-//
-//  Created by Toan Nguyen on 02.02.18.
-//  Copyright © 2018 Toan Nguyen. All rights reserved.
-//
-
 import Foundation
 
 struct Concentration {

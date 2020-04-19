@@ -14,8 +14,8 @@
             filePath = "BrainStorm/Controller/ArcadeSceneController/ArcadeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "ArcadeViewController"
             landmarkType = "3">
          </BreakpointContent>

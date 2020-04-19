@@ -156,9 +156,9 @@
 				864EAAAF2446154E00015CDA /* ContreollerForPath */,
 				862059AE24452C9100A4E78D /* Game */,
 				862059B324452D6800A4E78D /* ArcadeSceneController */,
+				862059B624452D8800A4E78D /* StudyController */,
 				862059B424452D7000A4E78D /* BrainStormController */,
 				862059B524452D7F00A4E78D /* FactsController */,
-				862059B624452D8800A4E78D /* StudyController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

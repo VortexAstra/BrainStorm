@@ -15,11 +15,13 @@ class ArcadeViewController: UIViewController {
   @IBOutlet weak var TableWithArcadeGames: UITableView!
   
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.isNavigationBarHidden = false
     TableWithArcadeGames.dataSource = self
     TableWithArcadeGames.delegate = self
-    
+   
     
   }
   
@@ -71,14 +73,12 @@ extension ArcadeViewController: UITableViewDataSource, UITableViewDelegate{
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    
+
     switch indexPath.row {
       case 0:
         let vc = storyboard?.instantiateViewController(withIdentifier: "ConcentrationBoard")
-       
         self.navigationController?.pushViewController(vc!, animated: true)
-       self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
       case 1:
         print("Работает2х")
        

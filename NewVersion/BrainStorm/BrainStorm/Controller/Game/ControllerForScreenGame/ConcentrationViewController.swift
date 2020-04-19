@@ -11,6 +11,14 @@ class ConcentrationViewController: UIViewController {
   private var themeCardTitles: [String]?
   private var emoji = [Card: String]()
   
+  
+
+  @IBAction func backButton(_ sender: UIButton) {
+//    let vc = storyboard?.instantiateViewController(withIdentifier: "ArcadeViewController")
+//    self.navigationController?.popToViewController(vc!, animated: true)
+    self.navigationController?.popViewController(animated: true)
+  }
+  
   private let halloweenTheme = Theme.init(backgroundColor: .black, cardColor: .orange, cardTitles: ["👻", "🎃", "💀", "😈", "😱", "🦇", "🕷", "🤡", "🕸", "🦉"])
   private let happyTheme = Theme.init(backgroundColor: #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), cardColor: #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), cardTitles: ["🤗", "😍", "🤣", "😁", "🙆", "😘", "🙆‍♂️", "🎉", "😋", "😛"])
   private let sadTheme = Theme.init(backgroundColor: #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1), cardColor: #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1), cardTitles: ["😭", "😢", "🙁", "😔", "🤧", "😩", "😨", "☹️", "😐", "😓"])
@@ -61,7 +69,7 @@ class ConcentrationViewController: UIViewController {
   }
   
   @IBAction private func selectCard(_ sender: UIButton) {
-    if let cardNumber = cardButtons.index(of: sender) {
+    if let cardNumber = cardButtons.firstIndex(of: sender) {
       game.chooseCard(at: cardNumber)
       updateView()
       timeBonusLabel.text = game.bonus
