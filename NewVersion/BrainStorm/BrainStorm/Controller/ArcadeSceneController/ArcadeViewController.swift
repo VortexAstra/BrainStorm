@@ -10,7 +10,7 @@ import UIKit
 
 class ArcadeViewController: UIViewController {
   
-  private var ArcadeData = ["Concentration", "B", "C", "D", "E", "F", "G", ""]
+  private var ArcadeData = ["Concentration", "Puzzle", "PPP", "D", "E", "F", "G", ""]
   let idCell = "mainCell"
   @IBOutlet weak var TableWithArcadeGames: UITableView!
   
@@ -21,8 +21,7 @@ class ArcadeViewController: UIViewController {
     self.navigationController?.isNavigationBarHidden = false
     TableWithArcadeGames.dataSource = self
     TableWithArcadeGames.delegate = self
-   
-    
+  
   }
   
 }

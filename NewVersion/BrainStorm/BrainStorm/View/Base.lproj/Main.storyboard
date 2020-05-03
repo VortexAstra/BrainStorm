@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--BrainStorm-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="BrainStorm" sceneMemberID="viewController">
@@ -16,31 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-wk-9a9">
-                                <rect key="frame" x="143" y="424" width="128" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="PUSH ME">
-                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vx-Fg-wOq">
+                                <rect key="frame" x="86" y="303" width="242" height="290"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="iFA-mo-3u2" kind="show" id="ej4-Ll-EZI"/>
+                                    <segue destination="iFA-mo-3u2" kind="show" id="KwZ-84-fuo"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="K2h-wk-9a9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YKh-s0-Jc6"/>
-                            <constraint firstItem="K2h-wk-9a9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8K-Gd-z1f"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EQX-Oy-pjF"/>
+                    <navigationItem key="navigationItem" title="BrainStorm" id="EQX-Oy-pjF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Facts-->
+        <scene sceneID="oOn-8C-6kC">
+            <objects>
+                <viewController id="Wws-g3-HzW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKl-74-xcf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GVl-ar-fGQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Facts" id="TaV-0i-28s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vw-Lz-Gkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="933"/>
+        </scene>
+        <!--Menu-->
         <scene sceneID="CeA-GJ-IIu">
             <objects>
                 <viewController id="iFA-mo-3u2" customClass="MenuViewController" customModule="BrainStorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,62 +58,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="aDU-GW-jpx">
-                                <rect key="frame" x="169.66666666666666" y="286" width="77" height="422"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-kC-hmE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" axis="vertical" distribution="fillEqually" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="2jW-Cd-0CD">
+                                <rect key="frame" x="152" y="322" width="109" height="398"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-LP-FTe">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
-                                        <state key="normal" title="Arcades"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3M-xD-pjz">
+                                        <rect key="frame" x="22.666666666666657" y="0.0" width="64" height="129.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <state key="normal" title="Arcade"/>
                                         <connections>
-                                            <segue destination="6co-fX-T2x" kind="show" id="69t-v3-oV2"/>
+                                            <segue destination="6co-fX-T2x" kind="show" id="K0F-99-Jfm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjD-fc-uA4">
-                                        <rect key="frame" x="0.0" y="98" width="40" height="30"/>
-                                        <state key="normal" title="Study"/>
-                                        <connections>
-                                            <segue destination="Alr-KJ-cCy" kind="show" id="qMq-n4-rHh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqb-yt-sCD">
-                                        <rect key="frame" x="0.0" y="196" width="77" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNx-WX-FhR">
+                                        <rect key="frame" x="4.6666666666666572" y="89.6666666666667" width="100" height="129.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                         <state key="normal" title="BrainStorm"/>
                                         <connections>
-                                            <segue destination="Wsx-5P-EHb" kind="show" id="WmK-Ry-klc"/>
+                                            <segue destination="Wsx-5P-EHb" kind="show" id="VY6-H8-waG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XS-U9-XWm">
-                                        <rect key="frame" x="0.0" y="294" width="37" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfZ-o5-9ei">
+                                        <rect key="frame" x="18" y="179" width="73" height="129.66666666666663"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <state key="normal" title="Key Skill"/>
+                                        <connections>
+                                            <segue destination="Alr-KJ-cCy" kind="show" id="g4g-S4-zxK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-p4-Tab">
+                                        <rect key="frame" x="30.666666666666657" y="268.66666666666663" width="48" height="129.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Facts"/>
                                         <connections>
-                                            <segue destination="5ew-91-JI3" kind="show" id="h15-ER-zu2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VID-Ec-6an">
-                                        <rect key="frame" x="0.0" y="392" width="34" height="30"/>
-                                        <state key="normal" title="Back"/>
-                                        <connections>
-                                            <action selector="Back:" destination="iFA-mo-3u2" eventType="touchUpInside" id="gdn-Xq-Hbn"/>
+                                            <action selector="Bacl:" destination="iFA-mo-3u2" eventType="touchUpInside" id="daP-LY-YZO"/>
+                                            <segue destination="Wws-g3-HzW" kind="show" id="SEF-tQ-rYY"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="tintColor" red="0.64705884459999996" green="0.31372550129999999" blue="0.6549019814" alpha="1" colorSpace="deviceRGB"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aDU-GW-jpx" firstAttribute="centerX" secondItem="jl7-Ag-EBc" secondAttribute="centerX" constant="1.1666666666667425" id="9ks-ri-003"/>
-                            <constraint firstItem="aDU-GW-jpx" firstAttribute="centerY" secondItem="jl7-Ag-EBc" secondAttribute="centerY" constant="49" id="aXW-Zq-bDn"/>
+                            <constraint firstItem="x3V-mC-aGg" firstAttribute="trailing" secondItem="2jW-Cd-0CD" secondAttribute="trailing" constant="153" id="2mX-N2-4lO"/>
+                            <constraint firstItem="2jW-Cd-0CD" firstAttribute="top" secondItem="x3V-mC-aGg" secondAttribute="top" constant="234" id="FCZ-UM-te7"/>
+                            <constraint firstItem="x3V-mC-aGg" firstAttribute="bottom" secondItem="2jW-Cd-0CD" secondAttribute="bottom" constant="142" id="G91-yg-sxH"/>
+                            <constraint firstItem="FMz-kC-hmE" firstAttribute="top" secondItem="x3V-mC-aGg" secondAttribute="top" id="IMq-n1-0JV"/>
+                            <constraint firstItem="FMz-kC-hmE" firstAttribute="leading" secondItem="x3V-mC-aGg" secondAttribute="leading" id="R7n-oZ-O69"/>
+                            <constraint firstItem="x3V-mC-aGg" firstAttribute="trailing" secondItem="FMz-kC-hmE" secondAttribute="trailing" id="Zou-Ft-Y0r"/>
+                            <constraint firstItem="x3V-mC-aGg" firstAttribute="bottom" secondItem="FMz-kC-hmE" secondAttribute="bottom" id="chV-qv-D5v"/>
+                            <constraint firstItem="2jW-Cd-0CD" firstAttribute="leading" secondItem="x3V-mC-aGg" secondAttribute="leading" constant="152" id="ui9-oH-Xr2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="x3V-mC-aGg"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HXx-VR-c4R"/>
+                    <navigationItem key="navigationItem" title="Menu" id="HXx-VR-c4R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCA-LN-9Ey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.8840579710147" y="129.91071428571428"/>
+            <point key="canvasLocation" x="1831.8840579710147" y="128.57142857142856"/>
         </scene>
-        <!--Study View Controller-->
+        <!--Key skill-->
         <scene sceneID="2tO-ZP-FAB">
             <objects>
                 <viewController id="Alr-KJ-cCy" customClass="StudyViewController" customModule="BrainStorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,34 +141,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u71-Z1-HdK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="67g-ed-4wX"/>
+                    <navigationItem key="navigationItem" title="Key skill" id="67g-ed-4wX"/>
                     <connections>
                         <outlet property="TableOfSomeItems" destination="7Hh-iw-cXn" id="2n4-ln-joY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-ud-VpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3088" y="-30"/>
-        </scene>
-        <!--Facts View Controller-->
-        <scene sceneID="Iu5-NN-2j9">
-            <objects>
-                <viewController id="5ew-91-JI3" customClass="FactsViewController" customModule="BrainStorm" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bTH-Hj-fGE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="eVZ-JB-Aw3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vss-UF-9jN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6eb-96-8TL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1832" y="884"/>
+            <point key="canvasLocation" x="3349" y="903"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mOO-Fk-2Wk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1N-tB-F4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kju-mQ-TUh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z9Z-aw-YoZ">
@@ -164,11 +165,10 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uUD-hC-Lxs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O1N-tB-F4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
-        <!--Arcade View Controller-->
+        <!--Arcade-->
         <scene sceneID="bVy-er-ili">
             <objects>
                 <viewController id="6co-fX-T2x" customClass="ArcadeViewController" customModule="BrainStorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,6 +179,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHD-xt-HXG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -190,7 +191,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="km2-he-ZTx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ozh-5X-xJO"/>
+                    <navigationItem key="navigationItem" title="Arcade" id="Ozh-5X-xJO"/>
                     <connections>
                         <outlet property="TableWithArcadeGames" destination="AHD-xt-HXG" id="h6L-Oh-4Vw"/>
                     </connections>
@@ -199,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="2893" y="-921"/>
         </scene>
-        <!--Brain Storm View Controller-->
+        <!--BrainStorm-->
         <scene sceneID="jIW-MT-Ilw">
             <objects>
                 <viewController id="Wsx-5P-EHb" customClass="BrainStormViewController" customModule="BrainStorm" customModuleProvider="target" sceneMemberID="viewController">
@@ -209,11 +210,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="oar-RV-Sc6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jeX-Fz-IfN"/>
+                    <navigationItem key="navigationItem" title="BrainStorm" id="jeX-Fz-IfN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsp-w3-jTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3087" y="761"/>
+            <point key="canvasLocation" x="3112" y="129"/>
         </scene>
         <!--Concentration View Controller-->
         <scene sceneID="ck0-fj-0jn">
@@ -445,14 +446,10 @@
                                         <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="backButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndo-ED-wGw">
-                                        <rect key="frame" x="19" y="25" width="84" height="61"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-DJ-hIx">
+                                        <rect key="frame" x="8" y="25" width="122" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="BackButtom:" destination="H1D-ig-ctv" eventType="touchUpInside" id="vl9-yw-Wu8"/>
-                                            <action selector="backButton:" destination="H1D-ig-ctv" eventType="touchUpInside" id="GhF-8o-CTU"/>
-                                        </connections>
+                                        <state key="normal" title="Go to Arcade"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -545,4 +542,7 @@
             <point key="canvasLocation" x="3989.8550724637685" y="-921.42857142857133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Menu" width="600" height="1140"/>
+    </resources>
 </document>

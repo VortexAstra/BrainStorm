@@ -10,12 +10,15 @@ import UIKit
 
 class MenuViewController: UIViewController {
   
+
+  
   @IBAction func Back(_ sender: UIButton) {
     self.navigationController?.popViewController(animated: true)
   }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationController?.isNavigationBarHidden = true
+    self.navigationController?.isNavigationBarHidden = false
     
     
     //         self.navigationController?.isNavigationBarHidden = false

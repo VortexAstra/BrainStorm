@@ -16,7 +16,6 @@
 		8642C11F2444A3A800A52CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8642C11D2444A3A800A52CFF /* LaunchScreen.storyboard */; };
 		8642C12B2444B45D00A52CFF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12A2444B45D00A52CFF /* MenuViewController.swift */; };
 		8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */; };
-		8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1302444B4E700A52CFF /* FactsViewController.swift */; };
 		8642C1332444B5B100A52CFF /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8642C1322444B5B100A52CFF /* StudyViewController.swift */; };
 		864EAAA324460D6600015CDA /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAA224460D6600015CDA /* ConcentrationViewController.swift */; };
 		864EAAA72446125B00015CDA /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EAAA62446125B00015CDA /* Cards.swift */; };
@@ -36,7 +35,6 @@
 		8642C1202444A3A800A52CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8642C12A2444B45D00A52CFF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8642C12E2444B4CD00A52CFF /* BrainStormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainStormViewController.swift; sourceTree = "<group>"; };
-		8642C1302444B4E700A52CFF /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		8642C1322444B5B100A52CFF /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		864EAAA224460D6600015CDA /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		864EAAA62446125B00015CDA /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
@@ -95,14 +93,6 @@
 			path = BrainStormController;
 			sourceTree = "<group>";
 		};
-		862059B524452D7F00A4E78D /* FactsController */ = {
-			isa = PBXGroup;
-			children = (
-				8642C1302444B4E700A52CFF /* FactsViewController.swift */,
-			);
-			path = FactsController;
-			sourceTree = "<group>";
-		};
 		862059B624452D8800A4E78D /* StudyController */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +148,6 @@
 				862059B324452D6800A4E78D /* ArcadeSceneController */,
 				862059B624452D8800A4E78D /* StudyController */,
 				862059B424452D7000A4E78D /* BrainStormController */,
-				862059B524452D7F00A4E78D /* FactsController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,7 +293,6 @@
 				864EAAA92446127100015CDA /* Concentration.swift in Sources */,
 				8642C1172444A3A600A52CFF /* MainViewController.swift in Sources */,
 				8642C12F2444B4CD00A52CFF /* BrainStormViewController.swift in Sources */,
-				8642C1312444B4E700A52CFF /* FactsViewController.swift in Sources */,
 				864EAAA324460D6600015CDA /* ConcentrationViewController.swift in Sources */,
 				8642C1132444A3A600A52CFF /* AppDelegate.swift in Sources */,
 				864EAAA72446125B00015CDA /* Cards.swift in Sources */,
